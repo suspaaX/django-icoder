@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+
+{% block title %}blogpost{%endblock title %}
+
+{% block body%}
+
+
+<div class='container'>
+
+    <article class="blog-post my-3">
+        <h2 class="display-5 link-body-emphasis mb-1">{{post.title}}</h2>
+        <p class="blog-post-meta">{{post.time}} by <a href="#">{{post.author}}</a></p>
+        <p>{{post.content |safe}}</p>
+        <hr>
+    </article>
+
+
+    <div class="container">
+        
+        <h1>Comments</h1>
+
+        <form action="/blog/postComment" method="post">
+
+            {% csrf_token %}
+            
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Post comments</label>
+                <input type="comment" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="hidden" name="postSno" value="{{post.sno}}">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+
+        <div class="row my-3">
+            <div class="col-md-2 bg-success">Image</div>
+            <div class="col-md-10 bg-primary"><b>Abhishek kumar:</b>this is best blog website</div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock body%}
+

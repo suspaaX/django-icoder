@@ -1,0 +1,110 @@
+<button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#signupModal">
+  SignIn
+</button>
+
+<!-- Modal SinIn-->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModal">SignIn Here</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="username" />
+          </div>
+
+          <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="last name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="password" class="form-control" id="placeholder=" placeholder="email@mail.com" />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="pass1" class="form-label">Choose a Password</label>
+            <input type="password" class="form-control" id="pass1" placeholder="choose your password" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pass2" class="form-label">Re-type Password</label>
+            <input type="password" class="form-control" id="pass2" placeholder="re-enter your password" />
+          </div>
+
+          <button type="button" class="btn btn-primary">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger signup modal -->
+
+<button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#signupModal">
+  SignUp
+</button>
+
+<!-- Modal Signup-->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModal">SignUp Here</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="username" />
+          </div>
+
+          <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="last name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="password" class="form-control" id="placeholder=" placeholder="email@mail.com" />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="pass1" class="form-label">Choose a Password</label>
+            <input type="password" class="form-control" id="pass1" placeholder="choose your password" />
+          </div>
+
+          <div class="mb-3">
+            <label for="pass2" class="form-label">Re-type Password</label>
+            <input type="password" class="form-control" id="pass2" placeholder="re-enter your password" />
+          </div>
+
+          <button type="button" class="btn btn-primary">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
